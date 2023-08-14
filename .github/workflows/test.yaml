@@ -20,7 +20,7 @@ jobs:
             ls -l
        - name: "Get Code"
          uses: "actions/checkout@v3"
-       - name: "List All the Files"
+       - name: "Preset Working Directory and List All the Files."
          run: |
             pwd
             ls -la
