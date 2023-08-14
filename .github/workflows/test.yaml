@@ -16,5 +16,7 @@ jobs:
        - name: "Repo"
          run: |
             echo "${{ github.repository }}"
+            cd ${{ github.repository }}
+            ls -l
 
             
