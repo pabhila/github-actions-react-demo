@@ -23,7 +23,7 @@ jobs:
     
     deploy:
       runs-on: ubuntu-latest
-      timeout-minutes: 0.1
+      timeout-minutes: 1
       needs: [test]
       steps:
         - name: "Code Checkout"
@@ -32,6 +32,8 @@ jobs:
           uses: "actions/setup-node@v3"
           with:
             node-version: "20.5.1"
+        - name: Sleep
+          run: sleep 90s
         - name: Install Dependencies
           run: npm ci
         - name: "Build Project"
