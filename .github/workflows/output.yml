@@ -23,4 +23,3 @@ jobs:
               echo ${myHexNumber}
               echo $myBoolean
               echo ${{ env.myFloatNumber }}
-              echo ${{ myString }}
