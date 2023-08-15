@@ -19,4 +19,4 @@ jobs:
          - name: "Output Github context"
            run: echo "${{ toJSON(github) }}"
          - name: "Print Environment Variables"
-           run: echo ${{ toJSON(env) }}
+           run: echo ${{ env.myNull }}
