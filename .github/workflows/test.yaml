@@ -24,5 +24,16 @@ jobs:
          run: |
             pwd
             ls -la
+       - name: "Print Existing Nodejs Version"
+         run: |
+           node --version
+       - name: "Setup the Node"
+         uses: "actions/setup-node@v3"
+         with:
+          node-version: "20.5.1"
+       - name: "Print Newer Nodejs Version"
+         run: |
+           node --version
+           
 
             
