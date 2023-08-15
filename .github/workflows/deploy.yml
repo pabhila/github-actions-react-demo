@@ -23,7 +23,6 @@ jobs:
     
     deploy:
       runs-on: ubuntu-latest
-      timeout-minutes: 1
       needs: [test]
       steps:
         - name: "Code Checkout"
