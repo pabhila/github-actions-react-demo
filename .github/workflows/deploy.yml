@@ -10,6 +10,8 @@ jobs:
     test:
       runs-on: ubuntu-latest
       steps:
+        - name: "Code Checkout"
+          uses: "actions/checkout@v3"
         - name: "Setup the Node"
           uses: "actions/setup-node@v3"
           with:
@@ -22,8 +24,8 @@ jobs:
     deploy:
       runs-on: ubuntu-latest
       steps:
-        - name: Get Code
-          uses: "actions/setup-node@v3"
+        - name: "Code Checkout"
+          uses: "actions/checkout@v3"
         - name: "Setup the Node"
           uses: "actions/setup-node@v3"
           with:
